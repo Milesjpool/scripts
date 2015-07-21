@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -n "$1" ];
+then
+	for var in "$@"
+	do
+		exo-open $var
+	done
+else
+	exo-open $(pwd)
+fi
